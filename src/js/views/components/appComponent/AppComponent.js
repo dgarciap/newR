@@ -4,6 +4,9 @@ export default class AppComponent {
     constructor(parentNode, app) {
         const appDiv = document.createElement('div');
         appDiv.classList.add('app-component');
+        appDiv.addEventListener('click', () =>
+            alert(`Version: ${app.getVersion()}`)
+        );
 
         const apdexField = document.createElement('span');
         apdexField.classList.add('app-apdex-field');

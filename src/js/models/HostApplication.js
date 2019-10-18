@@ -11,6 +11,10 @@ export default class HostApplication {
         return this.name;
     }
 
+    getVersion() {
+        return this.version;
+    }
+
     getApdex() {
         return this.apdex;
     }
