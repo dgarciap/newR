@@ -1,0 +1,20 @@
+.app-component {
+    margin-bottom: 23px;
+    display: flex;
+    flex-direction: row;
+}
+
+.app-component .app-apdex-field {
+    color: #4A4A4A;
+    opacity: 0.62;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 19px;
+    margin-right: 23px;
+}
+
+.app-component .app-name-field {
+    color: #4A4A4A;
+    font-size: 16px;
+    line-height: 19px;
+}

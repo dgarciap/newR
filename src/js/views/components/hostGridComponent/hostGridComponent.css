@@ -1,0 +1,14 @@
+.host-grid {
+    display: flex;
+}
+
+.host-grid.grid-mode {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.host-grid.list-mode {
+    flex-direction: column;
+    align-items: center;
+}

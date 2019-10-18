@@ -1,0 +1,9 @@
+body {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+#page-content {
+  max-width: 810px;
+  background-color: #F5F5F5;
+  padding:15px;
+}
