@@ -1,6 +1,9 @@
 import './hostPage.css';
 import TitleBarComponent from './components/titleBarComponent/TitleBarComponent';
-import HostGridComponent from './components/hostGridComponent/HostGridComponent';
+import HostGridComponent, {
+    GRID_MODE,
+    LIST_MODE
+} from './components/hostGridComponent/HostGridComponent';
 
 const USER_EMAIL = 'pepito@gmail.com';
 
@@ -19,7 +22,7 @@ export default class HostPage {
             this.parentNode,
             USER_EMAIL,
             false,
-            isList => console.log('isList' + isList)
+            isList => this.hostGrid.changeMode(isList ? LIST_MODE : GRID_MODE)
         );
         this.hostGrid = new HostGridComponent(this.parentNode, hostList);
     }
