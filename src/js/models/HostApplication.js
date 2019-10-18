@@ -1,10 +1,8 @@
 export default class HostApplication {
-    constructor(name, contributors, version, apdex, hostList) {
+    constructor(name, version, apdex) {
         this.name = name;
-        this.contributors = contributors;
         this.version = version;
         this.apdex = apdex;
-        this.hostList = hostList;
     }
 
     getName() {
@@ -17,10 +15,6 @@ export default class HostApplication {
 
     getApdex() {
         return this.apdex;
-    }
-
-    getContributors() {
-        return this.contributors;
     }
 
     /**

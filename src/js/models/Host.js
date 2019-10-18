@@ -15,10 +15,8 @@ export default class Host {
     static _createHostApp(appData) {
         return new HostApplication(
             appData.name,
-            appData.contributors,
             appData.version,
-            appData.apdex,
-            appData.host
+            appData.apdex
         );
     }
 

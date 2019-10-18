@@ -5,6 +5,7 @@ export default class AppComponent {
         const appDiv = document.createElement('div');
         appDiv.classList.add('app-component');
         appDiv.addEventListener('click', () =>
+            // eslint-disable-next-line no-alert
             alert(`Version: ${app.getVersion()}`)
         );
 

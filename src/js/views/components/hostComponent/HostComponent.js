@@ -20,6 +20,7 @@ export default class HostComponent {
         appList.classList.add('app-list');
 
         host.getTop5Apps().forEach(app => {
+            // eslint-disable-next-line no-new
             new AppComponent(appList, app);
         });
 
